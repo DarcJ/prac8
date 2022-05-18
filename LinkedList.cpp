@@ -52,7 +52,7 @@ void LinkedList::addAtPosition(int position, int newItem) {
     } 
     else {
 
-    	Node *t = new Node();
+    	Node *t = new Node(0);
     	t = head;
    	 	int counter = 1;
     
@@ -146,6 +146,8 @@ void LinkedList::deletePosition(int position) {
   		}
   		t1->next = t2->next;
   	}
+
+      
 }
 
 int LinkedList::getItem(int position) {
@@ -179,5 +181,6 @@ void LinkedList::printItems() {
 	std::cout<< t->getData() <<"\n";
 }
 
-LinkedList::~LinkedList(){	
+LinkedList::~LinkedList(){
+
 }

@@ -39,7 +39,7 @@ int main(){
     //create linked list object and pointer
 	LinkedList *linkedList = new LinkedList(array, count);
 
-    //Recieve function arguments from command line
+    //Recieve function arguments from command
 	int arg1;
  	cin >> arg1;
  	int arg2;
