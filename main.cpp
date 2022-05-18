@@ -10,6 +10,16 @@
 
 using namespace std;
 
+//this function will recieve user input from command line and break when input is not a digit
+bool deciferInput(string str) {
+	for (int i = 0; i < str.length(); i++) {
+		if (isdigit(str[i]) == false) {
+			return false;
+		}
+	}
+  return true;
+}
+
 int main(){
 
 	int array[100];
@@ -73,14 +83,4 @@ int main(){
 	//print linked list
 	linkedList->printItems();
 
-}
-
-//this function will recieve user input from command line and break when input is not a digit
-bool deciferInput(string str) {
-	for (int i = 0; i < str.length(); i++) {
-		if (isdigit(str[i]) == false) {
-			return false;
-		}
-	}
-  return true;
 }
