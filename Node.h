@@ -1,16 +1,22 @@
 #ifndef NODE_H
 #define NODE_H
 
+#include <stdlib.h>
+
 class Node {
 private:
 	int data;
 public: 
 	Node* next;
+	//Constructors
 	Node();
-	Node(int x);
-	void setNext(Node* Next);
+	Node(int a);
+	//Setters
+	void setNext(Node* N);
+	void setData(int a);
+	//Getters
 	Node* getNext();
-	void setData(int x);
 	int getData();
+	//No Need for Destructors 
 };
 #endif 
