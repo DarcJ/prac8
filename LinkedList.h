@@ -5,8 +5,8 @@
 class LinkedList : public Node {
 
 private:
-	Node* head;
 public: 
+	Node* head;
 	LinkedList();
 	LinkedList(int array[], int size);
 	void addFront(int newItem);
