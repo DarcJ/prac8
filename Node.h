@@ -5,9 +5,9 @@
 
 class Node {
 private:
-	int data;
 public: 
 	Node* next;
+	int data;
 	//Constructors
 	Node();
 	//Node(int a);
