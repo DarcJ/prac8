@@ -1,7 +1,6 @@
 #include "Node.h"
 Node::Node() {
-	data = 0;
-	next = NULL;
+
 }
 void Node::setNext(Node* N) {
 	next = N;
