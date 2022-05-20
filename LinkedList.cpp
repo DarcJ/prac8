@@ -1,9 +1,8 @@
 //Include Necessary Files
 #include "LinkedList.h"
-#include "Node.h"
 
 //Include Necessary Libraries
-#include <stdlib.h>
+#include <limits>
 #include <iostream>
 
 
@@ -186,6 +185,6 @@ void LinkedList::printItems() {
 }
 
 LinkedList::~LinkedList(){
-	
+
 
 }
