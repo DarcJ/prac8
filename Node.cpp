@@ -1,9 +1,11 @@
 #include "Node.h"
+Node::Node() {
 
-Node::Node(int a) {
-	data = a;
-    next = NULL;
 }
+//Node::Node(int a) {
+	///data = a;
+   // next = NULL;
+//}
 
 void Node::setNext(Node* N) {
 	next = N;

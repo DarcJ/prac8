@@ -14,7 +14,8 @@ LinkedList::LinkedList() {
 
 //CONSTRUCTOR 2 -> Make head the first element of list
 LinkedList::LinkedList(int array[], int size) {
-	head = new Node(array[0]); 
+	head = new Node(); 
+	head->setData(array[0]);
 
 	for (int i = 1; i < size; i++) {
 		addEnd(array[i]);
@@ -23,7 +24,8 @@ LinkedList::LinkedList(int array[], int size) {
 
 //Add item to the front of the linked list
 void LinkedList::addFront(int newItem) {
-	Node* t = new Node(newItem);
+	Node* t = new Node();
+	t->setData(newItem);
 	t->next = head;
 	head = t; 
 }
@@ -31,7 +33,8 @@ void LinkedList::addFront(int newItem) {
 //Add intem to the end of the linked list
 void LinkedList::addEnd(int newItem) {
 
-	Node* num = new Node(newItem);
+	Node* num = new Node();
+	num->setData(newItem);
 
 	Node* t = head;
 
@@ -52,7 +55,7 @@ void LinkedList::addAtPosition(int position, int newItem) {
     } 
     else {
 
-    	Node *t = new Node(0);
+    	Node *t = new Node();
     	t = head;
    	 	int counter = 1;
     
@@ -64,7 +67,8 @@ void LinkedList::addAtPosition(int position, int newItem) {
     	if (t->next == NULL) {
     		addEnd(newItem);
     	} else if (counter == position -1) {
-    		Node* z = new Node(newItem);
+    		Node* z = new Node();
+			z->setData(newItem);
     		z->next = t->next;
     		t->next = z;
     	}

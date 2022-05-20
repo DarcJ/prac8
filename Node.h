@@ -9,7 +9,8 @@ private:
 public: 
 	Node* next;
 	//Constructors
-	Node(int a);
+	Node();
+	//Node(int a);
 	//Setters
 	void setNext(Node* N);
 	void setData(int a);
